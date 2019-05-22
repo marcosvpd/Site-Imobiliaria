@@ -56,6 +56,36 @@
     </div>
   </nav>
 
+<div class="container" style="margin-top: 150px">
+      <h2 class="text-center text-uppercase text-secondary mb-0">Login</h2>
+      <hr class="star-dark mb-5">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+
+          <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Usuario</label>
+                <input class="form-control" id="name" type="text" placeholder="Usuario" required="required" data-validation-required-message="Please enter your name.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <label>Senha</label>
+                <input class="form-control" id="email" type="email" placeholder="Senha" required="required" data-validation-required-message="Please enter your email address.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <br><br>
+            <div id="success"></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Entrar</button>   <a href="" style="margin-left: 50px">Criar uma conta</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
