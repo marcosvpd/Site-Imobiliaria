@@ -40,37 +40,21 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Destaque</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Destaque</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Sobre nós</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Sobre nós</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contato</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Contato</a>
           </li>
             <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="****">Login</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="login.php">Login</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
- <section class="bg-primary text-white mb-0" id="about">
-    <div class="container">
-      <h2 class="text-center text-uppercase text-white">Sobre nós</h2>
-      <hr class="star-light mb-5">
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">Nós somos uma empresa fictícia de vendas de imóveis feita para um projeto da disciplina Programação Web II, do curso de Desenvolvimento de Sistemas da ETEC da Zona Leste.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">Se você está procurando uma imobiliária que venda de verdade, recomendamos que pesquise na internet alguma confiável.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="footer text-center">
