@@ -65,8 +65,8 @@
           <form name="sentMessage" id="contactForm" novalidate="novalidate">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Usuario</label>
-                <input class="form-control" id="name" type="text" placeholder="Usuario" required="required" data-validation-required-message="Please enter your name.">
+                <label>E-mail</label>
+                <input class="form-control" id="name" type="email" placeholder="E-mail" required="required" data-validation-required-message="Please enter your name.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -80,9 +80,45 @@
             <br><br>
             <div id="success"></div>
             <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Entrar</button>   <a href="" style="margin-left: 50px">Criar uma conta</a>
+              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Entrar</button> 
+              <button type="button" class="btn btn-primary mx-4 btn-xl" data-toggle="modal" data-target="#ExemploModalCentralizado">Cadastrar-se</button>
+			</div>
+		</form>
+<!-- Modal -->
+<div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="TituloModalCentralizado">Cadastro</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="recebe.php">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Nome</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu nome" name="nome">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Endereço de email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" name="email">
+    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Senha</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
+  </div>
+  <button type="submit" class="btn btn-primary" value="enviar">Concluir o cadastro</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
             </div>
-          </form>
         </div>
       </div>
     </div>
