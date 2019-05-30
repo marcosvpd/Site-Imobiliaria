@@ -62,18 +62,18 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
 
-          <form name="sentMessage" id="contactForm" novalidate="novalidate">
+          <form method="post">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>E-mail</label>
-                <input class="form-control" id="name" type="email" placeholder="E-mail" required="required" data-validation-required-message="Please enter your name.">
+                <input class="form-control" type="email" placeholder="E-mail" required="required" data-validation-required-message="Insira seu e-mail.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Senha</label>
-                <input class="form-control" id="email" type="email" placeholder="Senha" required="required" data-validation-required-message="Please enter your email address.">
+                <input class="form-control" type="password" placeholder="Senha" required="required" data-validation-required-message="Insira sua senha.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -98,16 +98,16 @@
         <form method="post" action="recebe.php">
   <div class="form-group">
     <label for="exampleInputEmail1">Nome</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu nome" name="nome">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu nome" name="nome" required="required">
   </div>
   <div class="form-group">
     <label for="exampleInputEmail1">Endereço de email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" name="email">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email" name="email" required="required">
     <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Senha</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha">
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" name="senha" required="required">
   </div>
   <button type="submit" class="btn btn-primary" value="enviar">Concluir o cadastro</button>
 </form>
