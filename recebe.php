@@ -1,9 +1,7 @@
 <?php
-
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
-
 $servername = "localhost";
 $database = "usuarios";
 $username = "root";
@@ -25,7 +23,6 @@ if (mysqli_query($conn, $sql)) {
 }
 mysqli_close($conn);
 ?>
-
 
 
 

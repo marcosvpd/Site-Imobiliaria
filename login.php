@@ -62,18 +62,18 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
 
-          <form method="post">
+          <form method="post" action="valida.php">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>E-mail</label>
-                <input class="form-control" type="email" placeholder="E-mail" required="required" data-validation-required-message="Insira seu e-mail.">
+                <input class="form-control" type="email" placeholder="E-mail" name="email" required="required" data-validation-required-message="Insira seu e-mail.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Senha</label>
-                <input class="form-control" type="password" placeholder="Senha" required="required" data-validation-required-message="Insira sua senha.">
+                <input class="form-control" type="password" placeholder="Senha" name="senha" required="required" data-validation-required-message="Insira sua senha.">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -183,25 +183,6 @@
       <i class="fa fa-chevron-up"></i>
     </a>
   </div>
-
-  <!-- Portfolio Modals -->
-
-  <!-- Portfolio Modal 1 -->
-  
-
-  <!-- Portfolio Modal 2 -->
-
-
-  <!-- Portfolio Modal 3 -->
-
-
-  <!-- Portfolio Modal 4 -->
-
-
-  <!-- Portfolio Modal 5 -->
- 
-
-  <!-- Portfolio Modal 6 -->
  
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
