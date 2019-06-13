@@ -107,9 +107,6 @@
   </a>
 </div>
 
-<?php
-echo $_SESSION['usuario_logado'];
-?>
   <!-- Portfolio Grid Section -->
   <section class="portfolio" id="portfolio">
     <div class="container">
@@ -309,7 +306,7 @@ echo $_SESSION['usuario_logado'];
 
   <!-- Portfolio Modals -->
 
-  <!-- Portfolio Modal 1 -->
+   <!-- Portfolio Modal 1 -->
   <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
     <div class="portfolio-modal-dialog bg-white">
       <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
@@ -436,7 +433,7 @@ echo $_SESSION['usuario_logado'];
     <span class="sr-only">Next</span>
   </a>
 </div>
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <p class="mb-5">Lar das mais variadas classes sociais, venha contemplar a diversidade humana.<br> O mundo está aqui!</p>
             <a class="btn btn-primary btn-lg rounded-pill" href="Cadstro.html">Agendar visita</a>
           </div>
         </div>
@@ -481,7 +478,7 @@ echo $_SESSION['usuario_logado'];
     <span class="sr-only">Next</span>
   </a>
 </div>
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <p class="mb-5">Conforto e segurança garantidos, Jardim Helena é sinônimo de tranquilidade.</p>
             <a class="btn btn-primary btn-lg rounded-pill" href="Cadstro.html">Agendar visita</a>
           </div>
         </div>
@@ -526,7 +523,7 @@ echo $_SESSION['usuario_logado'];
     <span class="sr-only">Next</span>
   </a>
 </div>
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <p class="mb-5">Lar dos Racionais Mc's!</p>
              <a class="btn btn-primary btn-lg rounded-pill" href="Cadstro.html">Agendar visita</a>
           </div>
         </div>
@@ -571,13 +568,15 @@ echo $_SESSION['usuario_logado'];
     <span class="sr-only">Next</span>
   </a>
 </div>
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+            <p class="mb-5">Simplesmente o lugar mais evoluído da galaxia, sem deixar de lado o atual design!</p>
+
             <a class="btn btn-primary btn-lg rounded-pill" href="Cadstro.html">Agendar visita</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
