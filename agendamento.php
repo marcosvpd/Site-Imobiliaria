@@ -97,7 +97,7 @@ $sel = $_POST['sel'];
 
       echo "<br>Dados";
 
-    echo "<br>O indivíduo(a) de <strong>NOME:</strong> <br>$nome que possui o <strong>E-MAIL:</strong> <br>$email realizou seu agendamento no <strong>PERÍODO:</strong> <br> $sel.";
+    echo "Você realizou seu agendamento no <strong>PERÍODO:</strong> <br> $sel.";
 
     
    echo "<br>Local ";
@@ -105,8 +105,7 @@ $sel = $_POST['sel'];
     echo "<br>O local de encontro com o corretor será na Avenida Águia de Haia, na altura do número 1350 em São Paulo, SP";
 
     echo "<br>Período";
-
-    echo "<br>O período e o horário que será realizado o encontro será: .$sel";    
+   
 ?>
 
 

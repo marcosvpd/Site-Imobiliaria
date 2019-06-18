@@ -347,7 +347,7 @@
   </a>
 </div>
             <p class="mb-5"><br>Casa com ótima localização e uma vista divína, com uma imerção completa no prazer e no luxo!</p>
-            <a class="btn btn-primary btn-lg rounded-pill" href="Cadstro.html">Agendar visita</a>
+            <a class="btn btn-primary btn-lg rounded-pill" href="agd.php">Agendar visita</a>
           </div>
         </div>
       </div>
@@ -392,7 +392,7 @@
   </a>
 </div>
             <p class="mb-5"><br>Casa localizada em um bairro super importante para a cultura brasileira, sinta êxtase de estar no berço da cultura brasileira! </p>
-             <a class="btn btn-primary btn-lg rounded-pill" href="Cadstro.html">Agendar visita</a>
+             <a class="btn btn-primary btn-lg rounded-pill" href="agd.php">Agendar visita</a>
           </div>
         </div>
       </div>
@@ -437,7 +437,7 @@
   </a>
 </div>
             <p class="mb-5">Lar das mais variadas classes sociais, venha contemplar a diversidade humana.<br> O mundo está aqui!</p>
-            <a class="btn btn-primary btn-lg rounded-pill" href="Cadstro.html">Agendar visita</a>
+            <a class="btn btn-primary btn-lg rounded-pill" href="agd.php">Agendar visita</a>
           </div>
         </div>
       </div>
@@ -482,7 +482,7 @@
   </a>
 </div>
             <p class="mb-5">Conforto e segurança garantidos, Jardim Helena é sinônimo de tranquilidade.</p>
-            <a class="btn btn-primary btn-lg rounded-pill" href="Cadstro.html">Agendar visita</a>
+            <a class="btn btn-primary btn-lg rounded-pill" href="agd.php">Agendar visita</a>
           </div>
         </div>
       </div>
@@ -527,7 +527,7 @@
   </a>
 </div>
             <p class="mb-5">Lar dos Racionais Mc's!</p>
-             <a class="btn btn-primary btn-lg rounded-pill" href="Cadstro.html">Agendar visita</a>
+             <a class="btn btn-primary btn-lg rounded-pill" href="agd.php">Agendar visita</a>
           </div>
         </div>
       </div>
@@ -573,7 +573,7 @@
 </div>
             <p class="mb-5">Simplesmente o lugar mais evoluído da galaxia, sem deixar de lado o atual design!</p>
 
-            <a class="btn btn-primary btn-lg rounded-pill" href="Cadstro.html">Agendar visita</a>
+            <a class="btn btn-primary btn-lg rounded-pill" href="agd.php">Agendar visita</a>
           </div>
         </div>
       </div>

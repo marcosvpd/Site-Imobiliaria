@@ -61,4 +61,12 @@ $conn = mysqli_connect($servername, $username, $password, $database);
             if ($nome) {
                 $row = mysqli_fetch_row($nome); //Pega o nome do usuario no banco de dados pelo codigo. CARALHO CONSEGUI FAZER ISSO 
             }
+
+            $email = "SELECT email FROM usuarios WHERE  cod = " . $_SESSION['usuario_logado'] . "";
+
+            $email = $conn->query($email);
+
+            if ($email) {
+                $em = mysqli_fetch_row($email);
+            }
 ?>
