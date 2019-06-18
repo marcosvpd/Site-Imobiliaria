@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -88,26 +88,28 @@
   <strong>Sucesso!</strong> Agendamento realizado com sucesso!
 </div>
 
+  <hr class="star-dark mb-5">
 
 <?php
 $sel = $_POST['sel'];
   
-  
+$data = $_POST['data'];
 
-    echo "$row[0] realizou o agendamento no <strong>PERÍODO: $sel </strong>";
+    echo "<h5> $row[0] realizou o agendamento para o dia: <strong> $data </strong> </h5";
 
     
-    echo "<br>Local: ";
+    echo "<h5> <br>Período da sua visita: <strong> $sel </strong> </h5>";
 
-    echo "<br>O local de encontro com o corretor será na Avenida Águia de Haia, na altura do número 1350 em São Paulo, SP";
+    echo "<h5> <br>O local de encontro com o corretor será na Avenida Águia de Haia, na altura do número 1350 em São Paulo, SP. No horário marcado.</h5>";
 
     $cod = rand(1,1000);
    
-    echo "<br>O código da sua agenda é: <strong> $cod </strong>. Anote-o <br>";
+    echo "<h4> <br>O código da sua agenda é: <strong> $cod </strong>. Anote-o <br> </h4>";
 ?>
 
+  <hr class="star-dark mb-5">
 
-<label class="text-center">Nos da Luketa's Enterprises agradecemos pela sua preferência, o corretor Marcos estará te esperando até lá! </label> 
+<h2 class="text-center text-uppercase text-secondary">Nós da Luketa's Enterprises agradecemos pela sua preferência, o corretor Marcos estará te esperando até lá! </h2> 
   </div>
 </form>
 

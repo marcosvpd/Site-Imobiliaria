@@ -97,7 +97,7 @@
   <div class="form-group ">
     <label for="exampleInputPassword1">Email do cliente: <?php echo "$em[0]"; ?></label>
   </div>
-      <small id="emailHelp" class="form-text text-muted">Não divulgaremos nenhum dado apresentado.</small>
+  Data da visita: <input type="date" name="data">
       <br>
   <label>Horário da visita:</label>
   <select class="form-control col-md-5" name="sel">
@@ -105,8 +105,7 @@
   <option>Vespertino (Tarde)14:00-17:00</option>
   <option>Noturno (Noite)18:00-21:00</option>
 </select>
-<br>	
-
+<small id="emailHelp" class="form-text text-muted">Não divulgaremos nenhum dado apresentado.</small>
 <br>
 <button type="submit" class="btn btn-primary btn-xl">Agendar</button>
 <br>
