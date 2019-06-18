@@ -1,10 +1,36 @@
 
 
+<?php
+$nome = $_POST['nome'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
+$servername = "localhost";
+$database = "usuarios";
+$username = "root";
+$password = "";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+// Check connection
+if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+}
+ 
+echo "Cadastrado com sucesso!";
+ 
+$sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+if (mysqli_query($conn, $sql)) {
+      print "<br /> <input type='BUTTON' value='voltar' onclick='javascript:history.go(-1)'>";
+} else {
+      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+mysqli_close($conn);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -55,7 +81,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" style="color: #15a97d;"href="index.html">Luketa's Enterprise</a>
+      <a class="navbar-brand js-scroll-trigger" style="color: #15a97d;"href="#page-top">Luketa's Enterprise</a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -66,13 +92,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Destaque</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php">Destaque</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Sobre nós</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php">Sobre nós</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Contato</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php">Contato</a>
           </li>
             <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="login.php">Login</a>
@@ -82,57 +108,20 @@
     </div>
   </nav>
 
+ <br>
+ <br>
+<div class="container" style="margin-top:180px;">
+    
+  <hr class="star-dark mb-5">
+  <h2 class="text-center text-uppercase text-secondary">Cadastrado com sucesso!</h2>
+  <hr class="star-dark mb-5">
+  <a class="my-5 btn btn-success btn-lg col-sm-12" href="login.php">Ir á pagina de login</a>
 
 
-
-
-
-
-
-<form style="margin-top: 308px">
-
- 
-<div class="alert alert-success text-center" style="margin-top: 200px" >
-  <strong>Sucesso!</strong> Agendamento realizado com sucesso!
 </div>
 
 
-
-<?php
-$nome = $_POST['nome'];
-$email = $_POST['email'];
-$senha = $_POST['senha'];
-$servername = "localhost";
-$database = "usuarios";
-$username = "root";
-$password = "";
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $database);
-// Check connection
-if (!$conn) {
-      die("Connection failed: " . mysqli_connect_error());
-}
- 
-echo "Cadastrado com sucesso!";
- 
-$sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
-if (mysqli_query($conn, $sql)) {
-      print "<br /> <input type='BUTTON' value='voltar' onclick='javascript:history.go(-1)'>";
-} else {
-      echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-mysqli_close($conn);
-?>
-
-
-
-<label class="text-center">Nos da Luketa's Enterprises agradecemos pela sua preferência, o corretor Marcos estará te esperando até lá! </label> 
-
-</form>
-
-
-
-
+</div>
 
 <footer class="footer text-center">
     <div class="container">

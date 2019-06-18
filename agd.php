@@ -86,7 +86,7 @@
     
 
 <div class="col-lg-8 mx-auto">
-<h2 class="text-center text-uppercase text-secondary ">Agendar Visita para casa em Mabilu</h2>
+<h2 class="text-center text-uppercase text-secondary">Agendar Visita</h2>
 <hr class="star-dark mb-5">
   <div class="form-group ">
    
