@@ -7,7 +7,7 @@ $message = $_POST['message'];
 
 
 $servername = "localhost";
-$database = "contato2";
+$database = "contato";
 $username = "root";
 $password = "";
 // Create connection

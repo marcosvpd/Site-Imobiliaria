@@ -27,7 +27,8 @@ if(isset($_POST['email'])){
         WHERE email = '" . $_SESSION['email'] . "'";
         $que = $mysqli->query($sql) or die($mysqli->error);
         $dado = $que->fetch_assoc();
-        
+
+
         if($que->num_rows == 0)
             $erro[] = "Nenhum usuário possui o <strong>e-mail</strong> informado.";
 
@@ -44,4 +45,20 @@ if(isset($_POST['email'])){
 
     }
 }
+
+$servername = "localhost";
+$database = "usuarios";
+$username = "root";
+$password = "";
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+
+             $name = "SELECT nome FROM usuarios WHERE cod = " . $_SESSION['usuario_logado'] . "";
+
+            $nome = $conn->query($name);
+
+            if ($nome) {
+                $row = mysqli_fetch_row($nome); //Pega o nome do usuario no banco de dados pelo codigo. CARALHO CONSEGUI FAZER ISSO 
+            }
 ?>
