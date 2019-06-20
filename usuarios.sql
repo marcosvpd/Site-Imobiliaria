@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 27-Maio-2019 às 09:35
+-- Generation Time: 21-Jun-2019 às 00:11
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
@@ -29,19 +29,38 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `usuarios` (
+  `cod` int(11) NOT NULL,
   `nome` varchar(50) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `senha` varchar(30) NOT NULL
+  `senha` varchar(70) NOT NULL,
+  `email` varchar(70) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `usuarios` (`nome`, `email`, `senha`) VALUES
-('Marcos', 'mm@live.net', 'sisisi'),
-('a', 'a@a.com', '111');
-COMMIT;
+INSERT INTO `usuarios` (`cod`, `nome`, `senha`, `email`) VALUES
+(1, 'Lucao', '1234567', 'a@b.com');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`cod`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
