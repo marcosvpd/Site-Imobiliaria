@@ -80,43 +80,43 @@
     </div>
   </nav>
 
- 
 
-<form action="agendamento.php" method="pos" style="margin-top: 150px">
+
+<form style="margin-top: 150px">
+
+ <div class="alert alert-success text-center" >
+  <strong>Sucesso!</strong> Agendamento realizado com sucesso!
+</div>
+
+
+<?php
+$nome = $_POST['nomeC'];
+$email = $_POST['email'];
+$sel = $_POST['sel'];
+
+
+      echo "<br>Dados";
+
+    echo "<br>O indivíduo(a) de NOME: $nome que possui o E-MAIL: $email realizou seu agendamento no PERÍODO: $sel.";
+
     
+   echo "<br>Local ";
 
-<div class="col-lg-8 mx-auto">
-<h2 class="text-center text-uppercase text-secondary ">Agendar Visita</h2>
-<hr class="star-dark mb-5">
-  <div class="form-group ">
-   
-  
+    echo "<br>O local de encontro com o corretor será na Avenida Águia de Haia, na altura do número 1350 em São Paulo, SP";
 
-    <label for="exampleInputEmail1">Nome do cliente</label>
-    <input type="text" class="form-control" placeholder="Nome" name="nomeC">
-    <small id="emailHelp" class="form-text text-muted">Não divulgaremos nenhum dado apresentado.</small>
-  </div>
-  <div class="form-group ">
-    <label for="exampleInputPassword1">Email para contato</label>
-    <input type="email" class="form-control" placeholder="Email" name="email">
-  </div>
-  <label>Horário de encontro</label>
-  <select class="form-control col-md-5" name="sel">
-  <option>Matutino (Manhã) 8:00-11:00</option>
-  <option>Vespertino (Tarde)14:00-17:00</option>
-  <option>Noturno (Noite)18:00-21:00</option>
-</select>
+    echo "<br>Período";
 
-  <small class="form-text text-muted">Já realizou o Login? Antes de realizar o agendamento é necessariamente restrito realizar o LOGIN!!</small>
-  <a class="btn btn-danger btn-lg " href="login.php">Login</a>
+    echo "<br>O período e o horário que será realizado o encontro será: .$sel";    
+?>
 
-  <br><br><button type="submit" class="btn btn-primary btn-xl">Agendar</button>
-<small class="form-text text-muted">Após clicar em agendar, mandaremos um email de confirmação para você, obrigado! </small>
+
+<label class="text-center">Nos da Luketa's Enterprises agradecemos pela sua preferência, o corretor Marcos estará te esperando até lá! </label> 
+
 </form>
 
 
 
-</div>
+
 
 <footer class="footer text-center">
     <div class="container">
