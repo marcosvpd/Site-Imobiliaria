@@ -64,13 +64,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Destaque</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Destaque</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Sobre nós</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Sobre nós</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contato</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html">Contato</a>
           </li>
             <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="login.php">Login</a>
@@ -84,7 +84,7 @@
 
 <form style="margin-top: 150px">
 
- <div class="alert alert-success text-center" >
+ <div class="alert alert-success text-center">
   <strong>Sucesso!</strong> Agendamento realizado com sucesso!
 </div>
 
@@ -97,7 +97,7 @@ $sel = $_POST['sel'];
 
       echo "<br>Dados";
 
-    echo "<br>O indivíduo(a) de NOME: $nome que possui o E-MAIL: $email realizou seu agendamento no PERÍODO: $sel.";
+    echo "<br>O indivíduo(a) de <strong>NOME:</strong> <br>$nome que possui o <strong>E-MAIL:</strong> <br>$email realizou seu agendamento no <strong>PERÍODO:</strong> <br> $sel.";
 
     
    echo "<br>Local ";
